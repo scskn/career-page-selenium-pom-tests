@@ -2,6 +2,17 @@
 * text=auto
 
 *.java linguist-language=Java
-*.html linguist-vendored
-*.css linguist-vendored
-*.js linguist-vendored
+
+*.html linguist-generated=true
+*.css linguist-generated=true
+*.js linguist-generated=true
+
+**/*.html linguist-generated=true
+**/*.css linguist-generated=true
+**/*.js linguist-generated=true
+
+target/** linguist-generated=true
+test-output/** linguist-generated=true
+reports/** linguist-generated=true
+allure-report/** linguist-generated=true
+screenshots/** linguist-generated=true
